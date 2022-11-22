@@ -1,0 +1,19 @@
+html {
+    font-family: "Inter";
+    font-size: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid var(--text-primary2);
+    color: var(--text-primary2);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "Inter", serif;
+}

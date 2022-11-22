@@ -1,0 +1,81 @@
+
+
+.corusel{
+    background: url(/assets/img/corusel-bg.png) no-repeat;
+    background-position: center center;
+    height: 568px;
+    position: relative;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.corusel-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 568px;
+    position: relative;
+}
+.corusel-content{
+    width: 343px;
+    height: 176px;
+    margin-left: 92px;
+    margin-top: 74px;
+}
+
+.corusel-title{
+    font-size: 2.8rem;
+    color: var(--text-primary2);
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.corusel-subtitle{
+    font-size: 1.4rem;
+    color: var(--text-primary2);
+    margin-bottom: 56px;
+}
+.corusel-content_btn{
+   
+    width: 198px;
+    height: 40px;
+   
+}
+
+
+
+.corusel-image img {
+    position: absolute;
+    top: 137px;
+    right: 36px;
+}
+
+.corusel-btns_left{
+    position: absolute;
+    top: 272px;
+    left: 30px;
+    background: transparent;
+}
+
+.corusel-btns_right{
+    position: absolute;
+    top: 272px;
+    right: 13px;
+    background: transparent;
+}
+
+.corusel-circles{
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    position: absolute;
+    bottom: 28px;
+    left: 539px;
+}
+
+.corusel-circle_item{
+    border-color: white;
+    height: 10px;
+    width: 10px;
+}
+
