@@ -1,0 +1,35 @@
+.main-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 140%;
+}
+
+
+.main-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 150%;
+    margin-top: 15px;
+    color: #7F8D97;
+    letter-spacing: -0.1px;
+}
+
+
+.main-wrapper{
+    max-width: 868px;
+    margin-top: 33px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 93px;
+}
+
+@media screen and (max-width: 592px) {
+    .main-wrapper{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

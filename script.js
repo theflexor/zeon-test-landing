@@ -1,5 +1,6 @@
 let btn = document.querySelector('#nav-icon3')
-
+let burger_navbar = document.querySelector('.burger-navbar')
 btn.addEventListener('click', function () {
-    console.log(this.classList.toggle('open'));
+    this.classList.toggle('open')
+    burger_navbar.classList.toggle('visible')
 } )

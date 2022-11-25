@@ -35,9 +35,9 @@
             <div class="header-wrapper">
                 <div class="header-left">
                     <div class="header-logo">Лого</div>
-                    <div class="nav">
-                        <ul class="nav-wrapper">
-                            <li class="nav-item"><a href="#">О нас</a>
+                    <div class="nav hidden">
+                        <ul class="nav-wrapper ">
+                            <li class="nav-item"><a href="/about.html">О нас</a>
                                 <figure class="nav-arrow">
                             </li>
                             <li class="nav-item"><a href="#">Наша миссия</a>
@@ -50,10 +50,34 @@
                     </div>
                 </div>
                 <div class="header-right">
-                    <div class="header-language">
+                    <div class="header-language hidden">
                         <span>Язык:</span>
                         <button class="header-language-item"><img src="/assets/img/KG.png" alt=""></button>
                         <button class="header-language-item"><img src="/assets/img/RU.png" alt=""></button>
+                    </div>
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="burger-navbar">
+                        <ul class="nav-wrapper">
+                            <li class="nav-item"><a href="/about.html">О нас</a>
+                                <figure class="nav-arrow">
+                            </li>
+                            <li class="nav-item"><a href="#">Наша миссия</a>
+                                <figure class="nav-arrow">
+                            </li>
+                            <li class="nav-item"><a href="#">Контакты</a>
+                                <figure class="nav-arrow">
+                            </li>
+                        </ul>
+                        <div class="header-language">
+                            <span>Язык:</span>
+                            <button class="header-language-item"><img src="/assets/img/KG.png" alt=""></button>
+                            <button class="header-language-item"><img src="/assets/img/RU.png" alt=""></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,9 +90,6 @@
                     <h1 class="title corusel-title ">Теплосети</h1>
                     <p class="corusel-subtitle">Тепло в каждый уголок нашей страны</p>
                     <button class=" btn corusel-content_btn ">Подробнее о нас</button>
-                </div>
-                <div class="corusel-image">
-                    <img src="/assets/img/corusel-image1.png" alt="">
                 </div>
                 <div class="corusel-circles">
                     <input type="radio" class='corusel-circle_item' name="corusel-btn">
@@ -119,47 +140,46 @@
                         <h3 class="news-actuals-current_title">Встреча министра образования с учителями <br> школы
                             Гимназии
                             №70 города бишкекка</h3>
-                        <img class="news-actuals-current_bg" src="/assets/img/news-current.png" alt="">
+                        <img class="news-actuals-current_bg" src="" alt="">
                     </div>
-                    <ul class="news-actuals-others">
-                        <li class="news-actuals-others_item">
-                            <span class="news-actuals-others_item_date">08.04.03 18:34</span>
-                            <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями школы...
-                            </h3>
-                            <img class="news-actuals-others_item_bg" src="/assets/img/news-others/Rectangle 186.png"
-                                alt="news">
-                        </li>
-                        <li class="news-actuals-others_item">
-                            <span class="news-actuals-others_item_date">08.04.03 18:34</span>
-                            <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями школы...
-                            </h3>
-                            <img class="news-actuals-others_item_bg" src="/assets/img/news-others/Rectangle 185.png"
-                                alt="news">
-                        </li>
-                        <li class="news-actuals-others_item">
-                            <span class="news-actuals-others_item_date">08.04.03 18:34</span>
-                            <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями школы...
-                            </h3>
-                            <img class="news-actuals-others_item_bg" src="/assets/img/news-others/Rectangle 187.png"
-                                alt="news">
-                        </li>
-                        <li class="news-actuals-others_item">
-                            <span class="news-actuals-others_item_date">08.04.03 18:34</span>
-                            <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями школы...
-                            </h3>
-                            <img class="news-actuals-others_item_bg" src="/assets/img/news-others/Rectangle 188.png"
-                                alt="news">
-                        </li>
-                    </ul>
+                    <div class="news-actuals-others">
+                        <div class="news-actuals-others_wrapper">
+                            <div class="news-actuals-others_item news-bg1">
+                                <span class="news-actuals-others_item_date">08.04.03 18:34</span>
+                                <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями
+                                    школы...
+                                </h3>
+                            </div>
+                            <div class="news-actuals-others_item news-bg2">
+                                <span class="news-actuals-others_item_date">08.04.03 18:34</span>
+                                <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями
+                                    школы...
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="news-actuals-others_wrapper">
+                            <div class="news-actuals-others_item news-bg3">
+                                <span class="news-actuals-others_item_date">08.04.03 18:34</span>
+                                <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями
+                                    школы...
+                                </h3>
+                            </div>
+                            <div class="news-actuals-others_item news-bg4">
+                                <span class="news-actuals-others_item_date">08.04.03 18:34</span>
+                                </h3>
+                                <h3 class="news-actuals-others_item_title">Встреча министра образования с учителями
+                                    школы...
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about">
+   <section class="about">
         <div class="container">
-            <ul class="about-wrapper">
-                <li class="about_item">
-                    <img class="about_item_bg" src="/assets/img/about-bg/Rectangle 213.png" alt="">
+            <ul class="about-wrapper ">
+                <li class="about_item about-bg1">
                     <div class="about_item_content">
                         <h2 class="about_item_title">Как мы начинали?</h2>
                         <p class="about_item_text">Методологический подход к экологии как к науке позволяет выделить
@@ -174,8 +194,7 @@
                         <button class="btn about_item_btn">Подробнее о нас</button>
                     </div>
                 </li>
-                <li class="about_item">
-                    <img class="about_item_bg" src="/assets/img/about-bg/Rectangle 214.png" alt="">
+                <li class="about_item about-bg2">
                     <div class="about_item_content">
                         <h2 class="about_item_title">Наша дальнейшая цель <br>
                             и будущее</h2>
@@ -191,8 +210,7 @@
                         <button class="btn about_item_btn">Подробнее о нас</button>
                     </div>
                 </li>
-                <li class="about_item">
-                    <img class="about_item_bg" src="/assets/img/about-bg/Rectangle 215.png" alt="">
+                <li class="about_item about-bg3">
                     <div class="about_item_content">
                         <h2 class="about_item_title">Кто мы?</h2>
                         <p class="about_item_text">Методологический подход к экологии как к науке позволяет выделить
@@ -216,26 +234,26 @@
                 <div class="footer-contacts">
                     <h2 class="footer_title">Наши контакты</h2>
                     <ul class="footer-numbers">
-                        <li class="footer-number_item"><img src="/assets/img/phone.png" alt=""> <span>+996 (777) 44
+                        <li class="footer-number_item"> <div class="footer-contacts_logo"><img src="/assets/img/phone.png" alt=""></div><span>+996 (777) 44
                                 55 66</span></li>
-                        <li class="footer-number_item"><img src="/assets/img/phone.png" alt=""> <span>+996 (777) 44
+                        <li class="footer-number_item"><div class="footer-contacts_logo"><img src="/assets/img/phone.png" alt=""></div> <span>+996 (777) 44
                                 55 66</span></li>
-                        <li class="footer-number_item"><img src="/assets/img/phone.png" alt=""> <span>+996 (777) 44
+                        <li class="footer-number_item"><div class="footer-contacts_logo"><img src="/assets/img/phone.png" alt=""></div> <span>+996 (777) 44
                                 55 66</span></li>
                     </ul>
                     <ul class="footer-socials">
-                        <li class="footer-socials_item"><img src="/assets/img/facebook.png" alt="">
+                        <li class="footer-socials_item"><div class="footer-contacts_logo"><img src="/assets/img/facebook.png" alt=""></div>
                             <span>Facebook</span>
                         </li>
-                        <li class="footer-socials_item"><img src="/assets/img/phone.png" alt="">
+                        <li class="footer-socials_item"><div class="footer-contacts_logo"></div>
                             <span>Instagram</span>
                         </li>
-                        <li class="footer-socials_item"><img src="/assets/img/youtube.png" alt="">
+                        <li class="footer-socials_item"><div class="footer-contacts_logo"><img src="/assets/img/youtube.png" alt=""></div>
                             <span>Youtube</span>
                         </li>
                     </ul>
                     <ul class="footer-address">
-                        <li class="footer-address_item"><img src="/assets/img/marker.png" alt=""><span>г.Бишкек,
+                        <li class="footer-address_item"><div class="footer-contacts_logo"><img src="/assets/img/marker.png" alt=""></div><span>г.Бишкек,
                                 пр.Чуй</span></li>
                     </ul>
                 </div> 
@@ -247,7 +265,7 @@
                 <span>Remotion</span>
             </div>
         </div>
-    </footer>
+    </footer> 
 </body>
 
-</html>
+</html> 

@@ -2,11 +2,8 @@
     margin: 0;
     padding: 0; 
   }
-  
-  
- #nav-icon3 {
+  #nav-icon3 {
     display: none;
-    border: 1px solid black;
     width: 24px;
     height: 24px;
     position: relative;
@@ -60,3 +57,9 @@
     left: 50%;
   }
   
+
+  @media screen and (max-width: 662px) {
+    #nav-icon3{
+      display: block;
+    }
+}

@@ -49,6 +49,11 @@
     font-size: 1.4rem;
     color: var(--text-primary);
     text-decoration: none;
+    transition: .4s;
+}
+
+.nav-item a:hover{
+    color: #181818;
 }
 
 .header-right {
@@ -60,11 +65,21 @@
     display: flex;
     align-items: center;
     padding-right: 10px;
+    justify-content: center;
 }
 
 .header-language-item {
     background: none;
     border: none;
+    width: 30px;
+    height: 24px;
+    transition: .4s;
+    border-radius: 6px;
+
+}
+
+.header-language-item:hover{
+    background: #E4F2FF;
 }
 
 .header-language-item:nth-of-type(1) {
@@ -76,8 +91,71 @@
     margin-right: 7px;
 }
 
+.burger-navbar{
+    position: absolute;
+    right: -100%;
+    top: 63px;
+    display: flex;
+    background: rgba(26, 21, 34, 0.4);
+    width: 100%;
+    z-index: 999;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.visible{
+    right: 0;
+}
+.burger-navbar .nav-wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+.burger-navbar .nav-wrapper .nav-item::after{
+    content: '';
+}
+
+.burger-navbar .nav-wrapper .nav-item a {
+    color: white;
+}
+.burger-navbar .header-language span {
+    color: white;
+} 
 @media screen and (max-width: 992px) {
     .corusel-image img {
         width: 50%;
     }
+
+    .header-left{
+        gap: 120px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .header-left{
+        gap: 40px;
+    }
+    .header-logo{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 662px){
+    .burger-navbar{
+        right: -100%;
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .hidden{
+        display: none;
+    }
+    .header-left{
+        gap: 0;
+    }
+
+    
 }

@@ -1,34 +1,25 @@
 .about-wrapper {
     margin-top: 72px;
-    margin-left: 25px;
-    margin-bottom: 82px;
+    margin-left: 24px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     gap: 48px;
 }
 
 
-.about_item {   
+.about_item {
     background: #FAFAFA;
     position: relative;
     min-height: 480px;
+    display: flex;
+    justify-content: center;
 }
 
-.about_item_bg {
-    position: absolute;
-    z-index: 1;
-}
 
-.about_item:nth-child(even) .about_item_bg {
-    position: absolute;
-    right: 7px;
-    bottom: 0;
-}
 
-.about_item:nth-child(odd) .about_item_bg {
-    position: absolute;
-    left: 0;
-}
+
+
 
 .about_item_content {
     width: 100%;
@@ -45,7 +36,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 34px;
     color: var(--text-primary);
     margin-bottom: 10px;
@@ -54,7 +45,7 @@
 .about_item_text {
     font-family: 'Inter', serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 2rem;
     color: var(--text-about-desc);
     margin-bottom: 19px;
@@ -71,8 +62,8 @@
 .about_item:nth-child(even) .about_item_content {
     padding-bottom: 55px;
     position: absolute;
-    left: 64px;
-    top: 49px;
+    left: 63px;
+    top: 48px;
     z-index: 1;
 }
 
@@ -82,11 +73,98 @@
 }
 
 .about_item_btn {
-    border: 1px solid black;
     color: black;
     max-width: 260px;
     width: 100%;
     text-align: center;
     padding: 9px;
+    border: 1px solid #0F2A59;
     margin-bottom: 25px;
+    transition: .4s;
+}
+
+.about_item_btn:hover {
+    background: rgb(15, 42, 89);
+    color: white;
+}
+
+
+.about-bg1 {
+    background: url(/assets/img/about-bg/Rectangle\ 213.png) no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.about-bg2 {
+    background: url(/assets/img/about-bg/Rectangle\ 214.png) no-repeat;
+    background-size: contain;
+    background-position: 98% 0px;
+}
+
+.about-bg3 {
+    background: url(/assets/img/about-bg/Rectangle\ 215.png) no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+@media screen and (max-width: 992px) {
+
+    .about_item {
+        height: 480px;
+        background-size: cover;
+    }
+
+}
+
+
+@media screen and (max-width: 762px) {
+    .about-wrapper {
+        position: static;
+        margin: 74px 0 0 0;
+        background: #FAFAFA;
+
+    }
+
+    .about_item {
+        margin-bottom: 300px;
+
+    }
+
+    .about_item:nth-child(odd) .about_item_content {
+        position: absolute;
+        left: 50%;
+        top: 47px;
+        z-index: 1;
+        transform: translate(-50%, 300px);
+        padding: 25px;
+        width: 95%;
+
+    }
+
+    .about_item:nth-child(even) .about_item_content {
+        width: 95%;
+        padding-bottom: 55px;
+        position: absolute;
+        left: 50%;
+        top: 47px;
+        z-index: 1;
+        transform: translate(-50%, 300px);
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .about-wrapper {
+        position: static;
+        margin: 74px 0 0 0;
+    }
+
+    .about_item {
+        padding: 0;
+    }
+
+    .about_item:nth-child(even) .about_item_content,
+    .about_item:nth-child(odd) .about_item_content {
+        margin-bottom: 400px;
+    }
 }
