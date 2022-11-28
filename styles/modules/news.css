@@ -18,6 +18,8 @@
     gap: 30px;
 }
 
+
+
 .news-actuals-current {
     width: 49.5%;
     height: 383px;
@@ -32,7 +34,10 @@
 
 
 
-
+.news-actuals-current:hover{
+    box-shadow: 2px 8px 6px   #200E32 ;
+    cursor: pointer;
+}
 
 .news-actuals-current_date {
     color: var(--text-primary2);
@@ -78,6 +83,12 @@
     flex-direction: column;
     width: 268px;
     height: 181px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.news-actuals-others_item:hover{
+    box-shadow: 2px 8px 6px   #200E32 ;
 }
 
 .news-actuals-others_item_date {

@@ -16,6 +16,9 @@
     font-size: 2.8rem;
     font-weight: 700;
     padding-left: 35px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .nav-wrapper {
@@ -64,7 +67,6 @@
 .header-language {
     display: flex;
     align-items: center;
-    padding-right: 10px;
     justify-content: center;
 }
 
@@ -96,7 +98,7 @@
     right: -100%;
     top: 63px;
     display: flex;
-    background: rgba(26, 21, 34, 0.4);
+    background: rgba(26, 21, 34, 0.7);
     width: 100%;
     z-index: 999;
     justify-content: center;

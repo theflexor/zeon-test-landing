@@ -37,6 +37,7 @@
 .footer-number_item,
 .footer-address_item,
 .footer-socials_item {
+    cursor: pointer;
     display: flex;
     margin-top: 15px;
     gap: 16px;
@@ -46,6 +47,14 @@
     line-height: 1.6rem;
     letter-spacing: 0.02em;
 }
+
+.footer-number_item:hover,
+.footer-address_item:hover,
+.footer-socials_item:hover{
+    color: rgb(15, 42, 89);
+}
+
+
 .footer-numbers{
     padding-bottom: 15px;
 }
@@ -83,6 +92,7 @@
     font-size: 13px;
     line-height: 16px;
     color: var(--text-primary2);
+    cursor: pointer;
 }
 
 
